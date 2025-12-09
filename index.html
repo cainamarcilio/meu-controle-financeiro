@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos Financeiros 💰</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Meu Controle Financeiro Simples</h1>
+    </header>
+
+    <main>
+        <section id="adicionar-gasto">
+            <h2>Adicionar Novo Gasto</h2>
+            <form id="formGasto">
+                <div class="input-group">
+                    <label for="descricao">Descrição/Nota:</label>
+                    <input type="text" id="descricao" required>
+                </div>
+                <div class="input-group">
+                    <label for="valor">Valor (R$):</label>
+                    <input type="number" id="valor" step="0.01" required>
+                </div>
+                <button type="submit">Registrar Gasto</button>
+            </form>
+        </section>
+
+        <div style="text-align: right; margin-bottom: 20px;">
+            <button id="resetGastos" style="background-color: #f44336;">Resetar Todos os Gastos</button>
+        </div>
+
+        <section id="resumo-mensal">
+            <h2>Resumo Mensal</h2>
+            <p>Total Gasto (Mês Atual): <span id="totalGastoMensal">R$ 0,00</span></p>
+        </section>
+
+        <section id="lista-gastos">
+            <h2>Histórico de Gastos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor (R$)</th>
+                        <th>Data e Hora do Registro</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaCorpo">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

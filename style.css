@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#formGasto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#lista-gastos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#lista-gastos th,
+#lista-gastos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#lista-gastos th {
+    background-color: #e2e2e2;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resumo-mensal p {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+
+/* Estilo para o botão Excluir individual */
+
+.botao-excluir {
+    background-color: #f44336;
+    padding: 5px 10px;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.botao-excluir:hover {
+    background-color: #d32f2f;
+}
