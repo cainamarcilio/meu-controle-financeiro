@@ -18,14 +18,14 @@
             <h2>Adicionar Novo Gasto</h2>
             <form id="formGasto">
                 <div class="input-group">
+                    <label for="descricao">Descrição/Nota:</label>
+                    <input type="text" id="descricao" required>
+                </div>
+                <div class="input-group">
                     <label for="valor">Valor (R$):</label>
                     <input type="number" id="valor" step="0.01" required>
                 </div>
                 <button type="submit">Registrar Gasto</button>
-                  <div class="input-group">
-                    <label for="descricao">Produto/Descrição:</label>
-                    <input type="text" id="descricao" required>
-                </div>
             </form>
         </section>
 
@@ -58,6 +58,4 @@
     <script src="script.js"></script>
 </body>
 
-
 </html>
-
